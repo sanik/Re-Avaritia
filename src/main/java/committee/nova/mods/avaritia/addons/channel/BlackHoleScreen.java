@@ -1,4 +1,4 @@
-package committee.nova.mods.avaritia.client.screen;
+package committee.nova.mods.avaritia.addons.channel;
 
 import com.google.common.collect.Lists;
 import com.mojang.blaze3d.platform.InputConstants;
@@ -7,9 +7,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import committee.nova.mods.avaritia.Static;
 import committee.nova.mods.avaritia.api.client.render.FluidItemRender;
 import committee.nova.mods.avaritia.client.widget.SimpleScrollBar;
-import committee.nova.mods.avaritia.common.menu.ChannelMenu;
 import committee.nova.mods.avaritia.common.net.channel.C2SFilterChannelPack;
-import committee.nova.mods.avaritia.common.sync.ClientChannelManager;
 import committee.nova.mods.avaritia.common.wrappers.channel.ClientChannel;
 import committee.nova.mods.avaritia.init.handler.NetworkHandler;
 import committee.nova.mods.avaritia.util.SortUtils;
@@ -42,7 +40,7 @@ import java.util.List;
  * @CreateTime: 2025/2/24 00:39
  * @Description:
  */
-public class WipChestScreen extends AbstractContainerScreen<ChannelMenu> {
+public class BlackHoleScreen extends AbstractContainerScreen<ChannelMenu> {
     @Setter
     @Getter
     private int blitOffset;
@@ -59,7 +57,7 @@ public class WipChestScreen extends AbstractContainerScreen<ChannelMenu> {
     private CraftToInventoryButton craftToInventoryButton;
     private CraftAndDropButton craftAndDropButton;
 
-    public WipChestScreen(ChannelMenu menu, Inventory inventory, Component title) {
+    public BlackHoleScreen(ChannelMenu menu, Inventory inventory, Component title) {
         super(menu, inventory, title);
         this.imageWidth = 202;
         this.imageHeight = 236;
